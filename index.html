@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-SHEBA</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    IBM: ['IBM Plex Sans', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        mainBG: '#E1EEFF',
+                        mainTXT: '#0D2B46',
+                        secondaryTXT: '#0360D9',
+                        theredTXT: '#2E2E2E',
+                        bodCol: '#021526',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="font-IBM">
+    <!-- start navbar -->
+    <nav class="bg-mainBG">
+        <div class=" container mx-auto max-w-screen-xl -scroll-mx-auto flex items-center justify-between py-4">
+            <h1 class="logo font-bold text-3xl">
+                <span class="text-mainTXT">E-</span><span class="text-secondaryTXT">Sheba</span>
+            </h1>
+            <ul class="nav-links flex items-center gap-5 max-md:hidden  text-lg">
+                <li class="nav-link">
+                    <a href="#"
+                        class="text-mainTXT hover:text-secondaryTXT hover:border-b-2 hover:border-secondaryTXT transition">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#"
+                        class="text-mainTXT hover:text-secondaryTXT hover:border-b-2 hover:border-secondaryTXT transition">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#"
+                        class="text-mainTXT hover:text-secondaryTXT hover:border-b-2 hover:border-secondaryTXT transition">Application</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#"
+                        class="text-mainTXT hover:text-secondaryTXT hover:border-b-2 hover:border-secondaryTXT transition">History</a>
+                </li>
+            </ul>
+            <div class="nav-buttons flex items-center gap-3 max-sm:hidden ">
+                <button
+                    class="font-bold border-2 border-secondaryTXT border-solid text-secondaryTXT py-2 px-6 rounded-3xl hover:bg-secondaryTXT hover:text-white transition">
+                    Log in
+                </button>
+                <button
+                    class="font-bold border-2 border-secondaryTXT border-solid py-2 px-6 rounded-3xl bg-secondaryTXT text-white hover:transition hover:brightness-50">
+                    Sign up
+                </button>
+            </div>
+            <!-- <i class="fa-bars"></i> -->
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start hero -->
+    <div class="hero bg-mainBG py-24 relative">
+        <div class="container mx-auto max-w-screen-xl -scroll-mx-auto sm:mx-auto px-4">
+            <div class="hero-content flex flex-col gap-20 items-start">
+                <div class="hero-title max-xl:z-10">
+                    <h1 class="text-6xl leading-normal font-bold text-mainTXT">
+                        Find & Search Your <br class="max-sm:hidden" />
+                        <span
+                            class=" relative text-secondaryTXT"> Favourite </span>
+                        Doctor
+                    </h1>
+                    <img src="./assets/nav and hero/Vector 5.png" alt="" class="relative  max-sm:relative max-sm:bottom-24">
+                    <p class="text-mainTXT">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                        Sem velit viverra amet faucibus.
+                    </p>    
+                </div>
+                <div class="input-hero z-10 bg-white flex gap-32 pl-10 py-3 pr-3 rounded-full items-center  max-sm:relative   max-sm:gap-12">
+                    <div class="doctor-name flex items-center gap-3">
+                        <img src="./assets/nav and hero/Group.png" alt="" />
+                        <p>Doctor’s Name</p>
+                        <img src="./assets/nav and hero/Vector 2 (1).png" alt="" />
+                    </div>
+                    <div class="location flex items-center gap-3">
+                        <img src="./assets/nav and hero/Group 1.png" alt="" />
+                        <p>Location</p>
+                        <img src="./assets/nav and hero/Vector 2 (1).png" alt="" />
+                    </div>
+                    <button
+                        class="search-icon bg-secondaryTXT p-4 rounded-full flex justify-center items-center w-14 h-14 hover:brightness-75 transition-all">
+                        <img src="./assets/nav and hero/bi_search.png" alt="" />
+                    </button>
+                </div>
+            </div>
+            <img src="./assets/nav and hero/Ellipse 14.png" alt="" class="absolute right-0 bottom-0 -z-1" />
+        </div>
+    </div>
+    <div class="hero-bar bg-secondaryTXT py-4 relative">
+        <div class=" container mx-auto max-w-screen-xl -scroll-mx-auto flex items-center justify-start gap-10 max-sm:flex-col">
+            <img src="./assets/nav and hero/unsplash_SakqLf78KVo.png" alt="" class=" absolute right-0 bottom-0 w-3/5 max-md:hidden max-xl:hidden"  />
+            <div class="bar-content flex flex-col gap-2 items-center">
+                <h1 class="text-white font-bold text-6xl">24/7</h1>
+                <p class="text-white">Online Support</p>
+            </div>
+            <hr class="border-2 border-solid border-white w-20 rotate-90" />
+            <div class="bar-content flex flex-col gap-2 items-center">
+                <h1 class="text-white font-bold text-6xl">100+</h1>
+                <p class="text-white">Doctors</p>
+            </div>
+            <hr class="border-2 border-solid border-white w-20 rotate-90" />
+            <div class="bar-content flex flex-col gap-2 items-center">
+                <h1 class="text-white font-bold text-6xl">1M+</h1>
+                <p class="text-white">Active Patients</p>
+            </div>
+        </div>
+    </div>
+    <!-- end hero -->
+    <!-- start cards -->
+    <div class="spicialists  py-24  relative">
+        <div class="container mx-auto max-w-screen-xl -scroll-mx-auto">
+            <div class="TXT">
+                <h1 class="text-theredTXT text-5xl font-bold ">Our Consulting Specialists</h1>
+            </div>
+            <div class="spicialists-cards flex justify-evenly items-center gap-2  cursor-pointer mt-10 max-sm:flex-col max-:ju max-xl:flex-col max-xl:gap-5">
+                <div
+                    class="card w-80 h-72 rounded-3xl border-2 border-bodCol px-7 py-9 gap-5 hover:bg-secondaryTXT hover:transition-all hover:text-white hover:border-transparent ">
+                    <img src="./assets/cards/Ellipse 2.png " alt="" class="relative">
+                    <img src="./assets/cards/Vector (11).png" alt="" class="relative bottom-16 left-6">
+                    <h3 class="text-2xl font-bold">Covid-19 Test</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                </div>
+                <div
+                    class="card w-80 h-72 rounded-3xl border-2 border-bodCol px-7 py-9 gap-5 hover:bg-secondaryTXT hover:transition-all hover:text-white   hover:border-transparent">
+                    <img src="./assets/cards/Ellipse 2.png " alt="" class="relative">
+                    <img src="./assets/cards/Vector (12).png" alt="" class="relative bottom-16 left-6">
+                    <h3 class="text-2xl font-bold">Heart Lungs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                </div>
+                <div
+                    class="card w-80 h-72 rounded-3xl border-2 border-bodCol px-7 py-9 gap-5 hover:bg-secondaryTXT hover:transition-all hover:text-white  hover:border-transparent  ">
+                    <img src="./assets/cards/Ellipse 2.png " alt="" class="relative">
+                    <img src="./assets/cards/Vector (13).png" alt="" class="relative bottom-16 left-6">
+                    <h3 class="text-2xl font-bold">Suppliment</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                </div>
+                <div
+                    class="card w-80 h-72 rounded-3xl border-2 border-bodCol px-7 py-9 gap-5 hover:bg-secondaryTXT hover:transition-all hover:text-white   hover:border-transparent ">
+                    <img src="./assets/cards/Ellipse 2.png " alt="" class="relative">
+                    <img src="./assets/cards/Vector (14).png" alt="" class="relative bottom-16 left-6">
+                    <h3 class="text-2xl font-bold">Mental Health</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end cards -->
+
+    <!-- start section one -->
+    <div class="section-one relative ">
+        <div class="container flex justify-between mx-auto max-w-screen-xl -scroll-mx-auto max-sm:flex-col max-xl:flex-col ">
+            <div class="image max-xl:m-auto ">
+                <img src="./assets/card 2/Rectangle 11.png" alt="">
+            </div>
+            <div class="content  flex flex-col gap-7 max-xl:m-auto max-xl:mt-8 ">
+                <h1 class="text-theredTXT text-5xl font-bold ">Why You Choose Us?</h1>
+                <ul class="flex flex-col gap-3">
+                    <li class="flex items-center gap-4"><img src="./assets/card 2/Vector (15).png" alt="">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit.</li>
+                    <li class="flex items-center gap-4"><img src="./assets/card 2/Vector (15).png" alt="">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit.</li>
+                    <li class="flex items-center gap-4"><img src="./assets/card 2/Vector (15).png" alt="">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit.</li>
+                    <li class="flex items-center gap-4"><img src="./assets/card 2/Vector (15).png" alt="">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit.</li>
+                    <li class="flex items-center gap-4"><img src="./assets/card 2/Vector (15).png" alt="">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit.</li>
+                </ul>
+                <button class="flex items-center gap-2 text-secondaryTXT">Learn More <img
+                        src="./assets/card 2/Vector (16).png" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <!-- end section one -->
+
+    <!-- start section two -->
+    <div class="section-two relative bg-mainBG mt-40 pb-40">
+        <div class="container flex justify-between  mx-auto max-w-screen-xl -scroll-mx-auto max-sm:flex-col max-xl:flex-col ">
+            <div class="content flex flex-col mt-40 gap-7 max-xl:m-auto max-xl:mt-40 ">
+                <h1 class="text-5xl leading-normal font-bold text-mainTXT">What
+                    <span class="relative text-secondaryTXT">Our Member’s</span><br>
+                    Saying About Us
+                </h1>
+                <p class="text-theredTXT">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Sem velit
+                    viverra amet faucibus.</p>
+                <div class="images flex flex-row">
+                    <img src="./assets/crde 3/Ellipse 7.png" alt="" class="cursor-pointer hover:brightness-75 transition-all ">
+                    <img src="./assets/crde 3/Ellipse 8.png" alt="" class="-ml-3 cursor-pointer hover:brightness-75 transition-all">
+                    <img src="./assets/crde 3/Ellipse 9.png" alt="" class="-ml-3 cursor-pointer hover:brightness-75 transition-all">
+                    <img src="./assets/crde 3/Ellipse 10.png" alt="" class="-ml-3 cursor-pointer hover:brightness-75 transition-all ">
+                    <img src="./assets/crde 3/Ellipse 11.png" alt="" class="-ml-3 cursor-pointer hover:brightness-75 transition-all">
+                    <img src="./assets/crde 3/Ellipse 12.png" alt="" class="-ml-3 cursor-pointer hover:brightness-75 transition-all ">
+                    <h3 class="text-base font-semibold m-3">100+ Reviews</h3>
+                </div>
+            </div>
+            <div class="card  mt-40 max-w-xl h-80 bg-white rounded-3xl border-2 p-12 max-xl:m-auto  max-xl:mt-40 ">
+                <div class="image-card flex flex-row items-center ">
+                    <img src="./assets/crde 3/Ellipse 10.png" alt="">
+                    <div class="txt">
+                        <h3 class="text-base font-bold">Jane Cooper</h3>
+                        <p>12/4/17</p>
+                    </div>
+                    <div class="stra-imag flex flex-row ">
+                        <img src="./assets/crde 3/Star 5.png" alt="">
+                        <img src="./assets/crde 3/Star 5.png" alt="">
+                        <img src="./assets/crde 3/Star 5.png" alt="">
+                        <img src="./assets/crde 3/Star 5.png" alt="">
+                        <img src="./assets/crde 3/Star 5.png" alt="">
+                        <img src="./assets/crde 3/Star 5.png" alt="">
+                    </div>
+                </div>
+                <div class="p mt-8 max-sm:mt-4">
+                    <p class="text-theredTXT">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra
+                        amet faucibus. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section two -->
+
+    <!-- start section three -->
+    <div class="section-three relative mt-40">
+        <div class="container  flex  justify-between  mx-auto max-w-screen-xl -scroll-mx-auto max-sm:flex-col max-xl:flex-col ">
+            <div class="content flex flex-col gap-5 max-xl:m-auto">
+                <h1 class="text-5xl leading-normal font-bold text-mainTXT">The Future <br> of <span
+                        class="relative text-secondaryTXT"> Quality Health</span></h1>
+                <p class="text-theredTXT">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus <br>
+                    feugiat lectus risus sed
+                    ullamcorper. Auctor semper fermentum <br> volutpat integer vel. In rhoncus elementum nunc, malesuada
+                    mi <br>
+                    sed. Nibh est sit lobortis id semper.</p>
+                <p class="text-theredTXT ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus <br>
+                    feugiat lectus risus sed
+                    ullamcorper. Auctor semper fermentum <br> volutpat integer vel. In rhoncus elementum nunc, malesuada
+                    mi <br>
+                    sed. Nibh est sit lobortis id semper.</p>
+                <p class="text-theredTXT">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus <br>
+                    feugiat lectus risus sed
+                    ullamcorper. sed. Nibh est sit lobortis id <br> semper..</p>
+                <button class="flex items-center gap-2 text-secondaryTXT">Learn More <img
+                        src="./assets/card 4/Vector (17).png" alt=""></button>
+            </div>
+            <div class="image-card max-xl:m-auto max-xl:mt-10">
+                <img src="./assets/card 4/Rectangle 15.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end section three -->
+
+    <!-- start section four -->
+    <div class="section-four bg-secondaryTXT relative mt-40 pb-20 rounded-3xl ml-40 max-w-6xl max-sm:mt-0 max-sm:ml-0 max-xl:m-auto">
+        <div class="container mx-auto max-w-screen-xl -scroll-mx-auto">
+            <div class="TXT mt-20 text-center">
+                <h1 class="text-5xl leading-normal font-bold text-white">Subscribe To Our Newsletter</h1>
+            </div>
+            <div class="input-img flex items-center justify-center mt-10">
+                <div class="relative w-2/3">
+                    <input class="input bg-white w-full h-14 pl-10 pr-20 rounded-full" type="text" placeholder="Enter your email">
+                    <img src="./assets/card 5/Vector (18).png" alt="Subscribe" class="cursor-pointer bg-secondaryTXT p-4 rounded-full absolute right-2 top-1/2 transform -translate-y-1/2 w-14 h-14 hover:brightness-75 transition-all">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section four -->
+    <!-- start footer -->
+    <footer class="relative bg-secondaryTXT mt-40 pb-40">
+        <div class="container   flex flex-col gap-20  pt-40   mx-auto max-w-screen-xl -scroll-mx-auto max-sm:text-center ">
+            <div class="title flex gap-60 max-sm:flex-col max-sm:gap-5 max-xl:flex-col max-xl:text-center max-xl:gap-10">
+                <div class="content flex flex-col gap-8">
+                    <h3 class="text-2xl leading-normal font-bold text-white">E-sheba</h3>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nec risus feugiat lectus risus sed <br>
+                        ullamcorper. Auctor semper fermentum</p>
+                    <p class="text-white"> volutpat integer vel. In rhoncus elementum nunc, <br> malesuada mi sed. Nibh est sit lobortis id
+                        semper.</p>
+                    <div class="images flex flex-row gap-3 max-sm:m-auto max-xl:m-auto">
+                        <img src="./assets/footer/Vector (19).png" alt="" class="cursor-pointer hover:brightness-75 transition-all">
+                        <img src="./assets/footer/Vector (21).png" alt="" class="cursor-pointer hover:brightness-75 transition-all" >
+                        <img src="./assets/footer/Vector (22).png" alt="" class="cursor-pointer hover:brightness-75 transition-all">
+                    </div>
+                </div>
+                <div class="link flex flex-col gap-8">
+                    <h3 class="text-2xl leading-normal font-bold text-white">Useful Links</h3>
+                    <ul class=" flex flex-col gap-2">
+                        <li><a href="#" class="text-white  hover:brightness-75 transition-all">About Us</a></li>
+                        <li><a href="#" class="text-white  hover:brightness-75 transition-all">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white  hover:brightness-75 transition-all ">Our Mission</a></li>
+                        <li><a href="#" class="text-white  hover:brightness-75 transition-all">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="adress flex flex-col gap-8">
+                    <h3 class="text-2xl leading-normal font-bold text-white">Address</h3>
+                    <img src="./assets/footer/Rectangle 18.png" alt="" class="cursor-pointer">
+                </div>  
+            </div> 
+            <div class="bar-footer flex flex-col gap-6">
+                <hr class="">
+                <p class="text-center text-white">©2022 All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+</body>
+
+</html>
